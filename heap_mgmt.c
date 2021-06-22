@@ -61,7 +61,7 @@ void endlist(int length,int idx)     //seglist with chunks in range 40-256
 	}
 	for(i=0;i<length-1;i++)
 	{
-		nptr=(heapElement*)malloc(sizeof(heapElement)); //what is the use of block size then???
+		nptr=(heapElement*)malloc(sizeof(heapElement));
 		nptr->size=varblock[j++];
 		nptr->elmntID=0;
 		nptr->isAllocated=FALSE;
